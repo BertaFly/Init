@@ -1,0 +1,6 @@
+The service is crontab. Execute 'sudo crontab -e' in terminal. In opened default editor configure it: ***** path_to_script/script_name.sh, where
+1st * is for minute (from 0 to 59)
+2nd * is for hour (from 0 to 23)
+3rd * is for day of month (from 1 to 31)
+4th * is for month (from 1 to 12)
+5th * is for day of week (from 0 to 6) (0=Sunday)
