@@ -1,0 +1,2 @@
+use nslookup 10.51.1.253 in terminal
+Server type is Application Server (DNS || DHCP)
