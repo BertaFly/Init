@@ -1,0 +1,3 @@
+crontab -l > cronrules
+echo "0 0 * * * new_sum=\"\$(mdsum /etc/crontab | awk '{print \$1}')\" && old_sum=\"\$(cat /etc/cron_sum)\" && if $new_sum != $old_sum ; then mdsum /etc/crontab | awk '{print $1}'> /etc/cron_sum && echo 'Crontab file was modified. Hugs and kisses (^.^)' | mail -s 'NOTE_from_crontab' root fi" >> cronrules
+crontab cronrules 
